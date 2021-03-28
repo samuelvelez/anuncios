@@ -21,7 +21,7 @@
                                 <h5 class="card-title">{{ $categoria->nombre }}</h5> 
                                 @foreach($data['subcategorias'] as $subcategoria)   
                                     @if($subcategoria->categoriaId == $categoria->idcategorias)
-                                    <a href="#" class="card-link">{{ $subcategoria->nombre}}</a>
+                                    <a href="/clasificado/{{$categoria->idcategorias}}" class="card-link">{{ $subcategoria->nombre}}</a>
                                     @endif
                                 @endforeach
                             </div>
